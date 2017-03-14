@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<tr th:each="note : ${notes}">
+    <td th:text="${note.id}">Onions</td>
+    <td th:text="${note.title}">2.41</td>
+    <td th:text="${note.content}">yes</td>
+    <br>
+</tr>
+</body>
+</html>

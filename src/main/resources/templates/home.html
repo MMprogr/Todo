@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/site.css" th:href="@{/css/site.css}"/>
+</head>
+<body>
+<tr th:each="note : ${notes}">
+    <div class="note">
+        <div class="title">
+            <td th:text="${note.title}">Tytuł</td>
+        </div>
+        <hr>
+        <div class="content">
+            <td th:text="${note.content}">Zawartosc</td>
+        </div>
+    </div>
+</tr>
+</body>
+</html>
+
